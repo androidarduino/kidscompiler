@@ -1,0 +1,18 @@
+This is a simple learning language for kids to learn programming.
+
+Features:
+    easy to learn
+    nice for small game programming
+
+Provides:
+    integrates graphics, to the level of sliding, sprites, etc.
+    integrates a physical engine, together with advanced conflict processing.
+    both compilable and intepretable, for easy and fun development.
+
+Rules:
+    the syntax must look similar to c++/java.
+    provide a rich library, while keeping it simple and tiny
+    as small set of data type and structures as possible
+    less but powerful extension interfaces
+    the goal is to guide the kids to program in a correct way
+    use as least as possible details in syntax and other stuff, emphasis design other than language
