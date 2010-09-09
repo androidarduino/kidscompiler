@@ -39,23 +39,13 @@
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     NOUN = 258,
-     PRONOUN = 259,
-     VERB = 260,
-     ADVERB = 261,
-     ADJECTIVE = 262,
-     PREPOSITION = 263,
-     CONJUNCTION = 264
+     NAME = 258,
+     NUMBER = 259
    };
 #endif
 /* Tokens.  */
-#define NOUN 258
-#define PRONOUN 259
-#define VERB 260
-#define ADVERB 261
-#define ADJECTIVE 262
-#define PREPOSITION 263
-#define CONJUNCTION 264
+#define NAME 258
+#define NUMBER 259
 
 
 
