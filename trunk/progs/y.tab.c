@@ -78,6 +78,9 @@
 
 
 /* Copy the first part of user declarations.  */
+#line 1 "ch3-01.y"
+
+#include<stdio.h>
 
 
 /* Enabling traces.  */
@@ -111,7 +114,7 @@ typedef int YYSTYPE;
 
 
 /* Line 216 of yacc.c.  */
-#line 115 "y.tab.c"
+#line 118 "y.tab.c"
 
 #ifdef short
 # undef short
@@ -393,7 +396,7 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,     3,     3,     4,     7,     8,     9
+       0,     6,     6,     7,    10,    11,    12
 };
 #endif
 
@@ -1295,28 +1298,28 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 4 "ch3-01.y"
+#line 7 "ch3-01.y"
     { printf("= %d\n", (yyvsp[(1) - (1)])); }
     break;
 
   case 4:
-#line 7 "ch3-01.y"
-    { (yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]); printf("plus expression found\n"); }
+#line 10 "ch3-01.y"
+    { (yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]); }
     break;
 
   case 5:
-#line 8 "ch3-01.y"
-    { (yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]); printf("minus expression found\n");}
+#line 11 "ch3-01.y"
+    { (yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]); }
     break;
 
   case 6:
-#line 9 "ch3-01.y"
-    { (yyval) = (yyvsp[(1) - (1)]); printf("number expression found\n");}
+#line 12 "ch3-01.y"
+    { (yyval) = (yyvsp[(1) - (1)]); }
     break;
 
 
 /* Line 1267 of yacc.c.  */
-#line 1320 "y.tab.c"
+#line 1323 "y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1529,5 +1532,15 @@ yyreturn:
   return YYID (yyresult);
 }
 
+
+#line 14 "ch3-01.y"
+
+
+extern FILE *yyin;
+
+main()
+{
+    yyparse();
+}
 
 

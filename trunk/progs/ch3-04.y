@@ -1,6 +1,8 @@
 %{
 #include "ch3hdr.h"
 #include <string.h>
+#include <stdio.h>
+#include<stdlib.h>
 %}
 
 %union {
@@ -39,18 +41,16 @@ expression:	expression '+' expression { $$ = $1 + $3; }
 	;
 %%
 /* look up a symbol table entry, add if not present */
-struct symtab *
-symlook(s)
-char *s;
+#include<stdio.h>
+#include <stdlib.h>
+struct symtab *symlook(s)char *s;
 {
 	char *p;
 	struct symtab *sp;
-	
 	for(sp = symtab; sp < &symtab[NSYMS]; sp++) {
 		/* is it already here? */
 		if(sp->name && !strcmp(sp->name, s))
 			return sp;
-		
 		/* is it free */
 		if(!sp->name) {
 			sp->name = strdup(s);
@@ -61,3 +61,11 @@ char *s;
 	yyerror("Too many symbols");
 	exit(1);	/* cannot continue */
 } /* symlook */
+main()
+{
+yyparse();
+}
+yyerror(s)char*s;
+{
+fprintf(stderr, "%^s\n", s);
+}

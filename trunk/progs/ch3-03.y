@@ -1,4 +1,5 @@
 %{
+#include <stdio.h>
 double vbltable[26];
 %}
 
