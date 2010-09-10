@@ -1,7 +1,11 @@
+%{
+#include <stdio.h>
+%}
 %token NAME NUMBER
 %left '-' '+'
 %left '*' '/'
 %nonassoc UMINUS
+
 
 %%
 
