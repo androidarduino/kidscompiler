@@ -42,7 +42,7 @@ struct item {
 /* macros */
 #define SCREEN_SIZE 80
 
-void cfree(char *);	/* free if not null */
+//void cfree(char *);	/* free if not null */
 
 /* code */
 
@@ -289,9 +289,10 @@ char *name;
 	return 1;
 }
 
-void
+/*void
 cfree(char *p)
 {
 	if(p)
 		free(p);
 }
+*/
