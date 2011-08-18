@@ -1,0 +1,57 @@
+qdeclarativeitem3d.cpp/QDeclarativeItem3DPrivate::~QDeclarativeItem3DPrivate()
+qdeclarativeitem3d.cpp/int QDeclarativeItem3DPrivate::transform_count(QDeclarativeListProperty<QGraphicsTransform3D> *list)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::transform_append(QDeclarativeListProperty<QGraphicsTransform3D> *list, QGraphicsTransform3D *item)
+qdeclarativeitem3d.cpp/QGraphicsTransform3D *QDeclarativeItem3DPrivate::transform_at(QDeclarativeListProperty<QGraphicsTransform3D> *list, int idx)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::transform_clear(QDeclarativeListProperty<QGraphicsTransform3D> *list)
+qdeclarativeitem3d.cpp/int QDeclarativeItem3DPrivate::pretransform_count(QDeclarativeListProperty<QGraphicsTransform3D> *list)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::pretransform_append(QDeclarativeListProperty<QGraphicsTransform3D> *list, QGraphicsTransform3D *item)
+qdeclarativeitem3d.cpp/QGraphicsTransform3D *QDeclarativeItem3DPrivate::pretransform_at(QDeclarativeListProperty<QGraphicsTransform3D> *list, int idx)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::pretransform_clear(QDeclarativeListProperty<QGraphicsTransform3D> *list)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::data_append(QDeclarativeListProperty<QObject> *prop, QObject *o)
+qdeclarativeitem3d.cpp/QObject *QDeclarativeItem3DPrivate::resources_at(QDeclarativeListProperty<QObject> *prop, int index)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3DPrivate::resources_append(QDeclarativeListProperty<QObject> *prop, QObject *o)
+qdeclarativeitem3d.cpp/int QDeclarativeItem3DPrivate::resources_count(QDeclarativeListProperty<QObject> *prop)
+qdeclarativeitem3d.cpp/QMatrix4x4 QDeclarativeItem3DPrivate::localTransforms() const
+qdeclarativeitem3d.cpp/QDeclarativeItem3D::QDeclarativeItem3D(QObject *parent)
+qdeclarativeitem3d.cpp/QDeclarativeItem3D::~QDeclarativeItem3D()
+qdeclarativeitem3d.cpp/QVector3D QDeclarativeItem3D::position() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setPosition(const QVector3D& value)
+qdeclarativeitem3d.cpp/qreal QDeclarativeItem3D::x() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setX(qreal value)
+qdeclarativeitem3d.cpp/qreal QDeclarativeItem3D::y() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setY(qreal value)
+qdeclarativeitem3d.cpp/qreal QDeclarativeItem3D::z() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setZ(qreal value)
+qdeclarativeitem3d.cpp/qreal QDeclarativeItem3D::scale() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setScale(qreal value)
+qdeclarativeitem3d.cpp/QDeclarativeListProperty<QGraphicsTransform3D> QDeclarativeItem3D::transform()
+qdeclarativeitem3d.cpp/QDeclarativeListProperty<QGraphicsTransform3D> QDeclarativeItem3D::pretransform()
+qdeclarativeitem3d.cpp/bool QDeclarativeItem3D::inheritEvents() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setInheritEvents(bool inherit)
+qdeclarativeitem3d.cpp/QDeclarativeMesh *QDeclarativeItem3D::mesh() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setMesh(QDeclarativeMesh *value)
+qdeclarativeitem3d.cpp/QDeclarativeEffect *QDeclarativeItem3D::effect() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setEffect(QDeclarativeEffect *value)
+qdeclarativeitem3d.cpp/QGLLightParameters *QDeclarativeItem3D::light() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setLight(QGLLightParameters *value)
+qdeclarativeitem3d.cpp/QDeclarativeListProperty<QObject> QDeclarativeItem3D::resources()
+qdeclarativeitem3d.cpp/QDeclarativeListProperty<QObject> QDeclarativeItem3D::data()
+qdeclarativeitem3d.cpp/QDeclarativeItem3D::CullFaces QDeclarativeItem3D::cullFaces() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setCullFaces(QDeclarativeItem3D::CullFaces value)
+qdeclarativeitem3d.cpp/QDeclarativeItem3D::SortMode QDeclarativeItem3D::sortChildren() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setSortChildren(QDeclarativeItem3D::SortMode mode)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::draw(QGLPainter *painter)
+qdeclarativeitem3d.cpp/void QDeclarativeViewport::setItemViewport(QDeclarativeItem3D *item)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::initialize(QGLPainter *painter)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::componentComplete()
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::drawItem(QGLPainter *painter)
+qdeclarativeitem3d.cpp/QMatrix4x4 QDeclarativeItem3DPrivate::localToWorldMatrix() const
+qdeclarativeitem3d.cpp/QMatrix4x4 QDeclarativeItem3DPrivate::worldToLocalMatrix() const
+qdeclarativeitem3d.cpp/QVector3D QDeclarativeItem3D::localToWorld(const QVector3D &point) const
+qdeclarativeitem3d.cpp/QVector3D QDeclarativeItem3D::worldToLocal(const QVector3D &point) const
+qdeclarativeitem3d.cpp/bool QDeclarativeItem3D::event(QEvent *e)
+qdeclarativeitem3d.cpp/QString QDeclarativeItem3D::meshNode() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setMeshNode(const QString &node)
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::update()
+qdeclarativeitem3d.cpp/bool QDeclarativeItem3D::isEnabled() const
+qdeclarativeitem3d.cpp/void QDeclarativeItem3D::setEnabled(bool value)
